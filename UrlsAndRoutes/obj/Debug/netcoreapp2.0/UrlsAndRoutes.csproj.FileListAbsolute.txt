@@ -1,0 +1,11 @@
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\bin\Debug\netcoreapp2.0\UrlsAndRoutes.deps.json
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\bin\Debug\netcoreapp2.0\UrlsAndRoutes.runtimeconfig.json
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\bin\Debug\netcoreapp2.0\UrlsAndRoutes.runtimeconfig.dev.json
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\bin\Debug\netcoreapp2.0\UrlsAndRoutes.dll
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\bin\Debug\netcoreapp2.0\UrlsAndRoutes.pdb
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\obj\Debug\netcoreapp2.0\UrlsAndRoutes.csprojResolveAssemblyReference.cache
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\obj\Debug\netcoreapp2.0\UrlsAndRoutes.csproj.CoreCompileInputs.cache
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\obj\Debug\netcoreapp2.0\UrlsAndRoutes.AssemblyInfoInputs.cache
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\obj\Debug\netcoreapp2.0\UrlsAndRoutes.AssemblyInfo.cs
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\obj\Debug\netcoreapp2.0\UrlsAndRoutes.dll
+C:\Users\narek\Source\Repos\URL\UrlsAndRoutes\obj\Debug\netcoreapp2.0\UrlsAndRoutes.pdb
