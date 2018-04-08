@@ -24,7 +24,14 @@ namespace UrlsAndRoutes
             app.UseDeveloperExceptionPage();           
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvc(routes => {
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "MyRoute",
+                    template: "{controller=Home}/{action=Index}/{id?}/{*catchall}");
+            });
+            /*app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "ShopSchema2",
                     template: "Shop/OldAction",
@@ -41,7 +48,7 @@ namespace UrlsAndRoutes
                 routes.MapRoute(
                     name: "",
                     template: "Public/{controller=Home}/{action=Index}");
-            });
+            });*/
         }
     }
 }
