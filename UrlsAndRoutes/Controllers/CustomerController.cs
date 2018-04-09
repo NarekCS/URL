@@ -9,9 +9,10 @@ using UrlsAndRoutes.Models;
 
 namespace UrlsAndRoutes.Controllers
 {
+    [Route("app/[controller]/actions/[action]/{id:weekday?}")]
     public class CustomerController : Controller
     {
-        // GET: /<controller>/
+         [Route("[controller]/MyAction")]
         public IActionResult Index()
         {
             return View("Result", new Result

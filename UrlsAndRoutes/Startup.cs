@@ -29,8 +29,8 @@ namespace UrlsAndRoutes
             app.UseDeveloperExceptionPage();           
             app.UseStatusCodePages();
             app.UseStaticFiles();
-
-            app.UseMvc(routes =>
+            app.UseMvcWithDefaultRoute();
+           /* app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "MyRoute",
@@ -39,7 +39,7 @@ namespace UrlsAndRoutes
                     defaults: new { controller = "Home", action = "Index" },
                    // constraints: new  {  id = new CompositeRouteConstraint( new IRouteConstraint[]{ new AlphaRouteConstraint(), new MinLengthRouteConstraint(6) }) });
                    constraints: new { id = new WeekDayConstraint() });
-            });
+            });*/
             /*app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "ShopSchema2",
