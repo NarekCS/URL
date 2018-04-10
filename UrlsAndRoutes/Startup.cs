@@ -18,8 +18,11 @@ namespace UrlsAndRoutes
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<RouteOptions>(options =>
-            options.ConstraintMap.Add("weekday", typeof(WeekDayConstraint)));
+            services.Configure<RouteOptions>(options => {
+                options.ConstraintMap.Add("weekday", typeof(WeekDayConstraint));
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = true;
+                });
             services.AddMvc();
         }
 
@@ -30,6 +33,7 @@ namespace UrlsAndRoutes
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvc(routes => {
+                routes.Routes.Add(new LegacyRoute(app.ApplicationServices,"/articles/Windows_3.1_Overview.html", "/old/.NET_1.0_Class_Library"));
                 //routes.MapRoute(
                 //    name: "NewRoute",
                 //    template: "App/Do{action}",
