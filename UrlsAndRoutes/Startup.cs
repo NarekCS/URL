@@ -26,10 +26,22 @@ namespace UrlsAndRoutes
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseDeveloperExceptionPage();           
+            app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes => {
+                //routes.MapRoute(
+                //    name: "NewRoute",
+                //    template: "App/Do{action}",
+                //    defaults: new { controller = "Home" });
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "out",
+                    template: "outbound/{controller=Home}/{action=CustomVariable}");
+            });
+            //app.UseMvcWithDefaultRoute();
            /* app.UseMvc(routes =>
             {
                 routes.MapRoute(
