@@ -33,6 +33,9 @@ namespace UrlsAndRoutes
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvc(routes => {
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Home}/{action=Index}");
                 routes.Routes.Add(new LegacyRoute(app.ApplicationServices,"/articles/Windows_3.1_Overview.html", "/old/.NET_1.0_Class_Library"));
                 //routes.MapRoute(
                 //    name: "NewRoute",
